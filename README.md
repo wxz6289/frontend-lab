@@ -64,7 +64,7 @@
 | `flutter/` | [wxz6289/flutter](https://github.com/wxz6289/flutter) | Flutter（本地 `learn` 下常为目录名 `fultter`） |
 | `admin/` | [wxz6289/admin](https://github.com/wxz6289/admin) | 管理后台示例 |
 | `frontend-interview/` | [wxz6289/frontend-interview](https://github.com/wxz6289/frontend-interview) | 前端面试资料 |
-| `learn-qiankun/` | [wxz6289/learn-qiankun](https://github.com/wxz6289/learn-qiankun) | qiankun 微前端 |
+| `qiankun/` | [wxz6289/learn-qiankun](https://github.com/wxz6289/learn-qiankun) | qiankun 微前端 |
 
 ---
 

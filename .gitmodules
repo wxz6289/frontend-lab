@@ -46,6 +46,6 @@
 [submodule "admin"]
 	path = admin
 	url = git@github.com:wxz6289/admin.git
-[submodule "learn-qiankun"]
-	path = learn-qiankun
+[submodule "qiankun"]
+	path = qiankun
 	url = git@github.com:wxz6289/learn-qiankun.git
