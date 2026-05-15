@@ -34,9 +34,6 @@
 [submodule "tauri"]
 	path = tauri
 	url = git@github.com:wxz6289/tauri.git
-[submodule "threejs"]
-	path = threejs
-	url = git@github.com:wxz6289/threejs.git
 [submodule "rxjs"]
 	path = rxjs
 	url = git@github.com:wxz6289/rxjs.git
