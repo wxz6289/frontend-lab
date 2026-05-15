@@ -9,7 +9,7 @@
 	url = git@github.com:wxz6289/js.git
 [submodule "typescript"]
 	path = typescript
-	url = git@github.com:wxz6289/learn-typescript.git
+	url = git@github.com:wxz6289/TypeScript.git
 [submodule "react"]
 	path = react
 	url = git@github.com:wxz6289/react.git
