@@ -12,7 +12,7 @@
 | 你本地长期改代码的目录 | 多在 `~/learn/…` |
 | 远程组织 | 子模块统一为 `git@github.com:wxz6289/<仓库>.git` |
 
-子模块在磁盘上的**目录名**（如 `html-css/`、`qiankun/`）与 GitHub **仓库名**（如 `html-css`、`learn-qiankun`）不必相同；下表「远程」一列即真实仓库名。
+子模块在磁盘上的**目录名**与 GitHub **仓库名**通常一致；少数历史仓库可能不同，下表「远程」一列为真实仓库名。
 
 ---
 
@@ -70,7 +70,7 @@
 
 | 本仓目录 | 远程仓库 | 说明 |
 |----------|----------|------|
-| `qiankun/` | [wxz6289/learn-qiankun](https://github.com/wxz6289/learn-qiankun) | qiankun 2.x 主应用 + React / Vue 子应用 |
+| `qiankun/` | [wxz6289/qiankun](https://github.com/wxz6289/qiankun) | qiankun 2.x 主应用 + React / Vue 子应用 |
 
 **本地运行微前端示例：**
 

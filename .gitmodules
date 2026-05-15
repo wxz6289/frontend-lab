@@ -48,4 +48,4 @@
 	url = git@github.com:wxz6289/admin.git
 [submodule "qiankun"]
 	path = qiankun
-	url = git@github.com:wxz6289/learn-qiankun.git
+	url = git@github.com:wxz6289/qiankun.git
