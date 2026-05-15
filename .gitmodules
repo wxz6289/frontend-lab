@@ -3,7 +3,7 @@
 	url = git@github.com:wxz6289/frontend-interview.git
 [submodule "html-css"]
 	path = html-css
-	url = git@github.com:wxz6289/learn-html.git
+	url = git@github.com:wxz6289/html-css.git
 [submodule "js"]
 	path = js
 	url = git@github.com:wxz6289/js.git
