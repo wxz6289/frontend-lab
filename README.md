@@ -12,7 +12,7 @@
 | 你本地长期改代码的目录 | 多在 `~/learn/…` |
 | 远程组织 | 子模块统一为 `git@github.com:wxz6289/<仓库>.git` |
 
-子模块在磁盘上的**目录名**（如 `html-css/`）与 GitHub **仓库名**（如 `learn-html`）不必相同；下表「远程」一列即真实仓库名。
+子模块在磁盘上的**目录名**（如 `html-css/`、`qiankun/`）与 GitHub **仓库名**（如 `html-css`、`learn-qiankun`）不必相同；下表「远程」一列即真实仓库名。
 
 ---
 
@@ -22,7 +22,7 @@
 
 | 本仓目录 | 远程仓库 | 说明 |
 |----------|----------|------|
-| `html-css/` | [wxz6289/learn-html](https://github.com/wxz6289/learn-html) | HTML / CSS |
+| `html-css/` | [wxz6289/html-css](https://github.com/wxz6289/html-css) | HTML / CSS |
 | `js/` | [wxz6289/js](https://github.com/wxz6289/js) | JavaScript |
 | `typescript/` | [wxz6289/learn-typescript](https://github.com/wxz6289/learn-typescript) | TypeScript |
 
@@ -53,8 +53,9 @@
 
 | 本仓目录 | 远程仓库 | 说明 |
 |----------|----------|------|
-| `threejs/` | [wxz6289/threejs](https://github.com/wxz6289/threejs) | Three.js（**仓库体积大**，见下文） |
 | `rxjs/` | [wxz6289/rxjs](https://github.com/wxz6289/rxjs) | RxJS |
+
+> **Three.js**：原 `threejs` 子模块已从本聚合仓移除（仓库体积大）。需要时单独克隆 [wxz6289/threejs](https://github.com/wxz6289/threejs)。
 
 ### 2.6 跨端与其它
 
@@ -64,7 +65,22 @@
 | `flutter/` | [wxz6289/flutter](https://github.com/wxz6289/flutter) | Flutter（本地 `learn` 下常为目录名 `fultter`） |
 | `admin/` | [wxz6289/admin](https://github.com/wxz6289/admin) | 管理后台示例 |
 | `frontend-interview/` | [wxz6289/frontend-interview](https://github.com/wxz6289/frontend-interview) | 前端面试资料 |
-| `qiankun/` | [wxz6289/learn-qiankun](https://github.com/wxz6289/learn-qiankun) | qiankun 微前端 |
+
+### 2.7 微前端
+
+| 本仓目录 | 远程仓库 | 说明 |
+|----------|----------|------|
+| `qiankun/` | [wxz6289/learn-qiankun](https://github.com/wxz6289/learn-qiankun) | qiankun 2.x 主应用 + React / Vue 子应用 |
+
+**本地运行微前端示例：**
+
+```bash
+cd qiankun
+npm install
+npm run dev
+```
+
+浏览器打开 http://localhost:7100（主应用 `7100`，React `7101`，Vue `7102`）。详见子仓 [qiankun/README.md](qiankun/README.md)。
 
 ---
 
@@ -84,12 +100,10 @@ cd frontend-lab
 git submodule update --init --recursive
 ```
 
-### `threejs` 单独说明
-
-`threejs` 对应远程仓库体积大，全量 `clone` 可能很慢。可以只初始化该子模块（或失败时重试）：
+**只检出部分子模块（例如 html-css + qiankun）：**
 
 ```bash
-git submodule update --init threejs
+git submodule update --init html-css qiankun
 ```
 
 ---
@@ -103,9 +117,8 @@ git submodule update --init threejs
 示例（以 `react` 为例，分支名请按子仓实际修改）：
 
 ```bash
-cd react   # 任选子模块目录
-git checkout main   # 或该仓库的默认分支
-# 修改、提交、推送到子模块自己的远程
+cd react
+git checkout main
 git add -A && git commit -m "feat: ..." && git push origin HEAD
 
 cd ..
