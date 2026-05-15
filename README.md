@@ -53,3 +53,14 @@ git add react && git commit -m "chore: bump react submodule" && git push
 ```
 
 父仓只记录各子模块的 **commit SHA**；日常改代码在对应子仓库完成。
+
+### 体积较大的子模块
+
+`threejs/` 远程仓库体积较大，首次拉取可能较慢。可单独浅克隆：
+
+```bash
+git submodule update --init threejs
+# 或
+git clone --depth 1 git@github.com:wxz6289/threejs.git threejs
+cd threejs && git fetch --depth 1 origin 2f5b30e7b261b56b605023df883d1225e1e8ac8b && git checkout FETCH_HEAD
+```
