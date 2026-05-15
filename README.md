@@ -1,6 +1,6 @@
 # frontend-lab
 
-聚合 [`learn`](https://github.com/wxz6289) 目录下前端相关学习项目，以 **Git 子模块** 方式统一管理。
+聚合本地目录 **`~/learn`** 下前端相关学习项目，以 **Git 子模块** 方式统一到本仓库；各子模块远程为 **`wxz6289/*`**。
 
 本地工作区对应路径：`~/learn` 下各同名目录；本仓库路径：`~/frontend-lab`。
 
@@ -56,11 +56,4 @@ git add react && git commit -m "chore: bump react submodule" && git push
 
 ### 体积较大的子模块
 
-`threejs/` 远程仓库体积较大，首次拉取可能较慢。可单独浅克隆：
-
-```bash
-git submodule update --init threejs
-# 或
-git clone --depth 1 git@github.com:wxz6289/threejs.git threejs
-cd threejs && git fetch --depth 1 origin 2f5b30e7b261b56b605023df883d1225e1e8ac8b && git checkout FETCH_HEAD
-```
+`threejs/` 对应远程仓库体积较大，首次 `git submodule update --init threejs` 可能耗时较久，可单独执行、耐心等待；网络不稳定时可重试同一命令。
